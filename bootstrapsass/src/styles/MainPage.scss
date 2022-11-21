@@ -1,0 +1,20 @@
+@import "../variables/Variables.scss";
+
+.mainPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $lightColor;
+
+  h1 {
+    color: $redColor;
+  }
+
+  button {
+    @include myButtonStyle($redColor , 15px);
+  }
+}
+
+button {
+  @include myButtonStyle(green , 25px);
+}
